@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.img-wrapper {
+    position: relative; 
+    padding-top: 25px;
+    background-color: #000000;
+    border-radius: 20px;
+}
+
+.img-wrapper::before {
+    border-radius: 200px;
+    content: '';
+    background-color: rgb(8, 8, 8);
+    width: 75px;
+    height: 20px;
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+img {
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
+    display: block; 
+}
